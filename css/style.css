@@ -1,0 +1,849 @@
+/* When validated the css, it said that "font-optical-sizing: auto;" doesnt exist. but in the embed code from google fonts, its included, so left it as is */
+
+:root {
+    --fs-sm: clamp(0.8rem, 0.17vi + 0.77rem, 0.89rem);
+    --fs-base: clamp(1rem, 0.34vi + 0.93rem, 1.19rem);
+    --fs-md: clamp(1.25rem, 0.61vi + 1.13rem, 1.58rem);
+    --fs-lg: clamp(1.56rem, 1vi + 1.36rem, 2.11rem);
+    --fs-xl: clamp(1.95rem, 1.56vi + 1.64rem, 2.81rem);
+    --fs-xxl: clamp(2.44rem, 2.38vi + 1.97rem, 3.75rem);
+    --fs-xxxl: clamp(3.05rem, 3.54vi + 2.34rem, 5rem);
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #ffffff;
+    color: #000000;
+    z-index: 10;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 25px;
+}
+  
+.skip-link:focus {
+    top: 10px;
+}
+
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.anuphan-font {
+    font-family: "Anuphan", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h1 {
+    font-size: var(--fs-xl);
+    color: #000;
+}
+
+h3 {
+    font-size: var(--fs-base);
+}
+
+p {
+    font-size: 0.9rem;
+    color: black;
+}
+
+a {
+    font-size: 1rem;
+}
+
+header {
+    background-color: #DBE3BE;
+    padding: 60px 18px 15px 18px;
+    border-bottom: solid 5px #B2BC91;
+}
+
+header svg {
+    fill: #8B550A;
+    width: 30vw;
+    height: auto;
+    padding-top: 14px;
+    
+}
+
+@media screen and (min-width: 368px) {
+    header svg {
+        fill: #8B550A;
+        width: 140px;
+        height: auto;
+        padding-top: 7px;
+        
+    }
+}
+
+footer svg {
+    fill: #8B550A;
+    max-width: 100%;
+    height: 70px;
+    
+}
+
+nav {
+    display: none;
+}
+
+.other-nav {
+    display: none;
+}
+
+.offcanvas {
+    background-color: #FFF4EB;
+    color: #8B550A;
+}
+
+.offcanvas-body li a{
+    color: #8B550A;
+}
+
+.btn-dark {
+    background-color: #00000000;
+    border: solid 1px rgba(0, 0, 0, 0);
+    color: #8B550A;
+    font-size: 1.5vw;
+}
+
+.otr-serv a {
+    font-size: 1.2vw;
+    padding-left: 5px;
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width: 862px) {
+    .btn-dark {
+        background-color: #00000000;
+        border: solid 1px rgba(0, 0, 0, 0);
+        color: #8B550A;
+        font-size: var(--fs-sm);
+    }
+    
+    .otr-serv a {
+        font-size: var(--fs-sm);
+        padding-left: 5px;
+        margin-bottom: 10px;
+    }
+}
+
+.otr-serv a:hover {
+    background-color: #8b550a55;
+    border: solid 1px #8b550a55;
+    color: #FFF4EB;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.otr-serv a:focus {
+    background-color: #9c141400;
+    border: solid 1px rgba(0, 0, 0, 0);
+    color: #8B550A;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.btn-dark:hover {
+    background-color: #8b550a55;
+    border: solid 1px #8b550a55;
+    color: #FFF4EB;
+}
+
+.btn-dark:focus {
+    background-color: #9c141400;
+    border: solid 1px rgba(0, 0, 0, 0);
+    color: #8B550A;
+
+}
+
+.dropdown-menu a:focus {
+    background-color: #8B550A;
+}
+
+.dropdown-menu-dark {
+    background-color: #FFF4EB;
+}
+
+.dropdown-menu-dark a{
+    color: #8B550A;
+}
+
+.dropdown-menu-dark a:hover{
+    color: #000000;
+}
+
+.btn-primary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #FFF4EB;
+    --bs-btn-bg: #C8A26C;
+    --bs-btn-border-color: #C8A26C;
+    --bs-btn-hover-color: #FFF4EB;
+    --bs-btn-hover-bg: #8B550A;
+    --bs-btn-hover-border-color: #8B550A;
+    --bs-btn-active-color: #FFF4EB;
+    --bs-btn-active-bg: #8B550A;
+    --bs-btn-active-border-color: #8B550A;
+
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 12px;
+
+    border-radius: 10px;
+    margin: 8px auto;
+}
+
+.btns .btn-primary {
+    letter-spacing: 2px;
+}
+
+.btn-link {
+    --bs-btn-color: #8B550A;
+    --bs-btn-hover-color: #8B550A;
+    --bs-btn-active-color: #8B550A;
+    --bs-btn-font-size: 16px; 
+    --bs-btn-padding-x: 0.1rem;
+}
+
+.btnbox {
+    display: flex;
+}
+
+.btns {
+    margin: auto 0px auto auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.volsecn .row {
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.menu-btn {
+    font-style: italic;
+}
+
+.img-fluid {
+    width: 100%;
+}
+
+.home-overlay-content h1, h3{
+    text-align: center;
+}
+
+.home-overlay-content h1{
+    /* font-size: 9vw; */
+    margin: auto 40px;
+}
+
+.home-overlay-content h3{
+    color: #8B550A;
+    margin: auto 45px;
+    margin-top: 14px;
+}
+
+.home-overlay-content {
+    background-color: #dbe3bea0;
+    padding: 30px 0;
+}
+
+.home-overlay {
+    background-image: url(../images/homepuppy.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.pupbtnbox {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.btn-secondary, .btn-outline-secondary {
+    --bs-btn-hover-bg: #C8A26C;
+    --bs-btn-hover-border-color: #C8A26C;
+    --bs-btn-active-bg: #C8A26C;
+    --bs-btn-active-border-color: #C8A26C;
+
+    --bs-btn-padding-y: 0.5rem;
+    --bs-btn-padding-x: 1rem;
+    --bs-btn-font-size: 12px;
+
+    border-radius: 10px;
+    margin: 0 auto;
+    letter-spacing: 2px;
+}
+
+.btn-secondary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #FFF4EB;
+    --bs-btn-bg: #8B550A;
+    --bs-btn-border-color: #8B550A;
+    --bs-btn-active-color: #FFF4EB;
+    --bs-btn-hover-color: #FFF4EB;
+}
+
+.btn-outline-secondary {
+    --bs-btn-font-weight: 600;
+    --bs-btn-color: #8B550A;
+    --bs-btn-bg: #c8a26c00;
+    --bs-btn-border-color: #8B550A;
+    --bs-btn-active-color: #8B550A;
+    --bs-btn-hover-color: #8B550A;
+
+    border: solid 2px #8B550A;
+}
+
+.catimg {
+    display: none;
+    background-image: url(../images/petcat.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 0;
+    
+}
+
+.latest {
+    background-color: #C8A26C;
+    /* margin: 60px 0 20px 0; */
+    padding: 25px;
+}
+
+.latestbox {
+    margin: 50px 0;
+}
+
+.latest p, .latest h1{
+    color: white;
+}
+
+.latest :nth-child(3) {
+    padding-top: 25px;
+}
+
+.grnblock {
+    background-color: #DBE3BE;
+    padding: 20px;
+    
+}
+
+.grnblockhouse {
+    margin: 30px;
+    gap: 30px;
+}
+
+.grnblock h3 {
+    color: #8B550A;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.grnblock :nth-child(3) {
+    color: #8B550A;
+}
+
+.latest .btn-link {
+    --bs-btn-color: white;
+    --bs-btn-hover-color: rgb(243, 243, 243);
+    --bs-btn-active-color: #e5e5e5;
+}
+
+.petdog {
+    border: solid 30px #C8A26C;
+    padding: 0;
+}
+
+.voluntr {
+    background-color: #DBE3BE;
+}
+
+.voluntr h3 {
+    padding-top: 40px;
+    color: #8B550A;
+    margin:0px 50px 30px 50px;
+}
+
+.voluntr p {
+    margin:30px 50px ;
+    text-align: center;
+}
+
+.vbtn {
+    width: 140px;
+    margin: 0 auto;
+    padding: 0px 0 30px 0;
+    
+}
+
+.pet-lovers {
+    padding: 24px
+}
+
+.pet-lovers h3 {
+    color: #8B550A;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+footer .btn-link {
+    --bs-btn-color: black;
+    --bs-btn-hover-color: black;
+    --bs-btn-active-color: black;
+    --bs-btn-font-size: var(--fs-sm); 
+    --bs-btn-padding-x: 0;
+
+    text-decoration: none;
+    text-align: left;
+}
+
+#brwnbtn {
+    --bs-btn-color: #8B550A;
+    --bs-btn-hover-color: #8B550A;
+    --bs-btn-active-color: #8B550A;
+}
+
+.ftdiv  {
+    margin: 0 14px;
+    padding-bottom: 3px;
+    border-bottom: solid 2px black;
+}
+
+.ftlinks {
+    display: flex;
+    flex-direction: column;
+}
+
+footer p {
+    text-align: center;
+    font-size: var(--fs-sm);
+    margin-top: 10px;
+}
+
+.adoptpet {
+    margin: 40px;
+}
+
+.adoptpet h1, .adoptpet p {
+    text-align: center;
+}
+
+.adoptpet h1 {
+    color: #8B550A;
+}
+
+.petsshop h3 {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 0.6rem;
+    padding-right: 20px;
+}
+
+.petsshop h1 {
+    margin-top: 7px;
+    font-size: 1.5rem;
+    padding-left: 20px;
+}
+
+.greendiv {
+    background-color: #DBE3BE;
+}
+
+.missionpic {
+    background-image: url(../images/mission.jpg);
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+.missionpic h1{
+    text-align: center;
+    padding: 120px 10px;
+    font-size: 40px;
+}
+
+.ourmission h3 {
+    text-align: left;
+}
+
+.ourmission {
+    margin: 40px 20px;
+}
+
+.pupp2 {
+    display: none;
+}
+
+.ftlogo a {
+    margin-top: 40px;   
+}
+
+.birdpic {
+    padding: 20px 70px;
+}
+
+.nutshell {
+    background-color: #DBE3BE;
+}
+
+.nutshell p {
+    margin: 0 30px;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.nutshell h3 {
+    color: #8B550A;
+}
+
+.lastpara {
+    padding:40px;
+}
+
+.petshop {
+    margin: 0 20px;
+}
+
+.petmeta {
+    display: flex;
+}
+
+.petmeta h1 {
+    font-size: var(--fs-lg);
+    padding-left: 15px;
+    padding-top: 7px;
+}
+
+.petmeta h3 {
+    font-size: var(--fs-base);
+    text-align: right;
+    padding-right: 15px;
+    padding-top:14px;
+}
+
+.notice { 
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    header .btn-link {
+        display: none;
+    }
+
+    h1 {
+        font-size: var(--fs-xxl);
+    }
+
+    h3 {
+        font-size: var(--fs-lg);
+    }
+
+    p {
+        font-size: var(--fs-base)
+    }
+
+    .home-overlay {
+        padding: 200px 0;
+    }
+
+    .home-overlay-content h1{
+        margin: auto 100px;
+    }
+    
+    .home-overlay-content h3{
+        color: #8B550A;
+        margin: auto 110px;
+    }
+
+    .pupbtnbox {
+        display: flex;
+        flex-direction: row;
+        width: 350px;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+
+    .btn-secondary {
+        margin: 0 0;
+    }
+
+    .btn-outline-secondary {
+        margin: 0 0;
+    }
+
+    header {
+        padding-top: 18px;
+        border-bottom: solid 7px #B2BC91;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .other-nav {
+        display: block;
+    }
+    
+    .btn-primary {
+        margin: 0 0;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row-reverse;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 5px;
+        padding-left: 0;
+    }
+
+    .grnblockhouse #blk1 {
+        border-right: solid 10px rgb(255, 255, 255);
+    }
+
+    .grnblockhouse #blk2 {
+        border-left: solid 10px rgb(255, 255, 255);
+    }
+
+    .grnblockhouse {
+        gap: 0;
+        margin: auto 50px;
+        margin-bottom: 30px;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        text-decoration: none;
+        margin-right: 1rem;
+        color: #8B550A;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .latestbox {
+        margin: 50px;
+    }
+
+    .catimg {
+        display: block;
+    }
+
+    .latest p, .latest h1{
+        color: white;
+        text-align: left;
+    }
+
+    .missionpic {
+        background-image: url(../images/mission.jpg);
+        height: 400px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .btn-link {
+        justify-self: start;
+    }
+    
+    .missionpic h1{
+        text-align: center;
+        padding: 140px 10px;
+        font-size: 70px;
+    }
+
+    .volsecn .row {
+        margin: 0;
+        flex-direction: row-reverse;
+    }
+
+    .voluntr h3 {
+        padding-top: 40px;
+        color: #8B550A;
+        margin:0px 50px 30px 50px;
+        text-align: left;
+    }
+    
+    .voluntr p {
+        margin:30px 50px ;
+        text-align: left;
+    }
+
+    .vbtn {
+        width: 140px;
+        margin: 0 50px;
+        padding: 0px 0 20px 0;
+        
+    }
+
+    .volbox {
+        height: 70vw;
+        margin: auto 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer .btn-link {
+        --bs-btn-color: black;
+        --bs-btn-hover-color: black;
+        --bs-btn-active-color: black;
+        --bs-btn-font-size: var(--fs-md); 
+        --bs-btn-padding-x: 0;
+    
+        text-decoration: none;
+        text-align: left;
+    }
+
+    .birdpic {
+        padding: 40px;
+    }
+
+    .nuttopic {
+        margin-top: 5vw;
+        text-align: left;
+    }
+
+    .nuttopic h3, .nuttopic p{
+        text-align: left;
+    }
+
+    .nuttopic p {
+        margin: 0;
+    }
+    
+}
+
+@media screen and (min-width: 992px) {
+    header .btn-link {
+        display: none;
+    }
+
+    .headwrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+
+    }
+
+    .home-overlay-content {
+        max-width: 1200px;
+        margin: 0 auto;
+        border-radius: 30px;
+    }
+
+    .home-overlay {
+        padding: 200px 0;
+        background-image: url(../images/homepuppydesk.png);
+    }
+
+    header {
+        padding-top: 18px;
+        border-bottom: solid 7px #B2BC91;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: row-reverse;
+        list-style-type: none;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0;
+        margin-top: 5px;
+        padding-left: 0;
+    }
+
+    nav a {
+        font-size: 0.95rem;
+        text-decoration: none;
+        margin-right: 1rem;
+        color: #8B550A;
+    }
+
+    .btns {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .adoptpet {
+        margin: 40px auto;
+        width: 600px;
+    }
+
+    .catimg {
+        background-image: url(../images/petcatdesk.jpg);
+        background-position: center;
+        background-size: cover;
+        padding: 80px 0;
+        
+    }
+    
+    .latestbox {
+        max-width: 1200px;
+        margin: 0 auto;
+        border-top: solid 60px white;
+        padding: 0 20px;
+    }
+
+    .grnblockhouse {
+        gap: 0;
+        margin: 0 auto;
+
+        padding: 20px 20px 60px 20px;
+        max-width: 1200px;
+
+    }
+
+    .missionpic {
+        background-image: url(../images/mission.jpg);
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .missionpic h1{
+        text-align: center;
+        padding: 100px 10px;
+    }
+
+    .ourmission {
+        max-width: 900px;
+        margin: 40px auto;
+    }
+
+    .nutshell .row {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+}
